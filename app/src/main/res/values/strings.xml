@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Inventoried</string>
+
+    <string name="inventory_name">Inventario</string>
+    <string name="stores_name">Lista de tiendas</string>
+    <string name="shopping_name">Lista de compras</string>
+
+</resources>
