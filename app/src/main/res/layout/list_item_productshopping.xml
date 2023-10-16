@@ -10,6 +10,7 @@
         android:id="@+id/textViewShoppingName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="Nombre: "
         android:textSize="18sp" />
 
@@ -17,11 +18,13 @@
         android:id="@+id/textViewShoppingPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="Precio: " />
 
     <TextView
         android:id="@+id/textViewShoppingAmount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
         android:text="Cantidad: " />
 </LinearLayout>

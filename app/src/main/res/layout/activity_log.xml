@@ -8,22 +8,28 @@
 
     <TextView
         android:id="@+id/logTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenido"
+        android:layout_width="263dp"
+        android:layout_height="47dp"
+        android:fontFamily="casual"
+        android:includeFontPadding="false"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <EditText
         android:id="@+id/logUserInput"
         android:layout_width="233dp"
         android:layout_height="52dp"
-        android:layout_marginTop="96dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:hint="Usuario"
+        android:fontFamily="casual"
+        android:hint="@string/logreg_hint_username"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +41,8 @@
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Contraseña"
+        android:fontFamily="casual"
+        android:hint="@string/logreg_hint_pasword"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -47,7 +54,9 @@
         android:layout_width="150dp"
         android:layout_height="56dp"
         android:layout_marginTop="20dp"
-        android:text="Iniciar Sesion"
+        android:fontFamily="casual"
+        android:text="@string/logreg_login"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -57,10 +66,22 @@
         android:id="@+id/logRegisButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Registarse"
+        android:layout_marginTop="88dp"
+        android:fontFamily="casual"
+        android:text="@string/logreg_register"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logLogInButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="107dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/logTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

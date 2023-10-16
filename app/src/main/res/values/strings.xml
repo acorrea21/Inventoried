@@ -1,8 +1,34 @@
 <resources>
     <string name="app_name">Inventoried</string>
 
+    <string name="welcome">¡Bienvenido a inventoried!</string>
+
+
     <string name="inventory_name">Inventario</string>
     <string name="stores_name">Lista de tiendas</string>
     <string name="shopping_name">Lista de compras</string>
 
+    <string name="product_add">¡Añade un nuevo producto!</string>
+    <string name="product_edit">¡Edita tu producto!</string>
+    <string name="store_add">¡Añade una nueva tienda!</string>
+    <string name="store_edit">¡Edita tu tienda!</string>
+
+    <string name="logreg_login">Iniciar Sesion</string>
+    <string name="logreg_register">Registrarse</string>
+    <string name="logreg_back">Volver</string>
+    <string name="logreg_reg_tittle">Registrate</string>
+    <string name="logreg_hint_username">Usuario</string>
+    <string name="logreg_hint_pasword">Contraseña</string>
+    <string name="logreg_hint_newusername">Nuevo Usuario</string>
+    <string name="logreg_hint_newpassword">Nueva Contraseña</string>
+
+
+    <string name="addedit_add">Añadir</string>
+    <string name="addedit_cancel">Cancelar</string>
+    <string name="addedit_confirm">Confirmar</string>
+    <string name="addedit_erase">Eliminar</string>
+    <string name="addedit_hint_name">Nombre</string>
+    <string name="addedit_hint_description">Descripción</string>
+    <string name="addedit_hint_amount">Cantidad</string>
+    <string name="addedit_hint_price">Precio</string>
 </resources>
