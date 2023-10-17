@@ -1,6 +1,8 @@
+
 Inventoried es un proyecto creado por Alexander Correa para el curso de Programacion de Dispositivos Moviles.
 Inventoried es una aplicacion creada para facilitar la gestion y registros de productos que esten dentro del hogar, gestionar listas de compras, precios, presupuestos, tiendas o lugares de interes, planificacion de compras, recordatorios de compra, y planificacion de compras de varios usuarios.
 
+LINK DE PRESENTACION: https://youtu.be/rZUvA5T7jrk
 ESTADO DEL PROYECTO: MAQUETADO
 
 Requerimientos funcionales:
@@ -15,7 +17,7 @@ Los usuarios deben tener una ID o un metodo para evitar la repeticion de nombres
 Debe poder crearse eventos entre varios usuarios
 Debe poder gestionar listas de lugares, con gps
 
-Requerimientos no funcionales:
+Requerimientos no funcionales: 
 Debe ser minimalista
 Debe ser intuitiva
 Debe ser bonita
@@ -26,3 +28,4 @@ Debe ser facil crear nuevos productos
 Debe ser facil crear nuevas tiendas
 Debe poder entenderse sin tutorial
 
+DIAGRAMA DE CLASES:
