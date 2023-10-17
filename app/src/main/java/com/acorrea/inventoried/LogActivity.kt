@@ -19,7 +19,7 @@ class LogActivity : AppCompatActivity()
         val logInButton = findViewById<Button>(R.id.logLogInButton)
         val registerButton = findViewById<Button>(R.id.logRegisButton)
 
-        DataManager.AddUser(UserData("admin","admin1234"))
+        DataManager.users.add(UserData("admin","admin1234"))
 
         logInButton.setOnClickListener {TryLogin()}
         registerButton.setOnClickListener {TryToReg() }
@@ -36,7 +36,7 @@ class LogActivity : AppCompatActivity()
     {
         val userInput = findViewById<EditText>(R.id.logUserInput)
         val passInput = findViewById<EditText>(R.id.logPassInput)
-        val users = DataManager.GetUsers()
+        val users = DataManager.users
 
         for (userdata in users)
         {

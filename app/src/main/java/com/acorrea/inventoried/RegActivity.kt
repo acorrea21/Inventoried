@@ -26,7 +26,7 @@ class RegActivity : AppCompatActivity()
     {
         val  userInput = findViewById<EditText>(R.id.regUserInput)
         val  passInput = findViewById<EditText>(R.id.regPassInput)
-        val users = DataManager.GetUsers();
+        val users = DataManager.users;
 
         //No queremos usuarios repetidos, asi que por comprobamos que no exista el mismo usuario
         for (userdata in users)
@@ -38,7 +38,7 @@ class RegActivity : AppCompatActivity()
             }
         }
         Toast.makeText(this,"Registrado exitosamente",Toast.LENGTH_LONG).show()
-        DataManager.AddUser(UserData(userInput.text.toString(),passInput.text.toString()))
+        DataManager.users.add(UserData(userInput.text.toString(),passInput.text.toString()))
     }
 
 

@@ -13,19 +13,9 @@ object DataManager
         println("Singleton DataManager invoked.")
     }
 
-    private var users = arrayListOf<UserData>()
+    var users = arrayListOf<UserData>()
     var stores = arrayListOf<StoreData>()
     var products = arrayListOf<Product>()
     var productsInventory = arrayListOf<ProductInventory>()
     var productsShopping = arrayListOf<ProductShopping>()
-
-    fun AddUser(userData: UserData)
-    {
-        users.add(userData)
-    }
-
-    fun GetUsers(): ArrayList<UserData>
-    {
-        return users;
-    }
 }

@@ -15,9 +15,7 @@ class InventoryActivity : AppCompatActivity() {
         setContentView(R.layout.activity_inventory)
 
         val listView = findViewById<ListView>(R.id.inventoryListView)
-
-        DataManager.productsInventory.add(ProductInventory(Product("Coca","asd"),1))
-
+        
         listView.adapter = InventoryListAdapter(this, android.R.layout.simple_list_item_1,DataManager.productsInventory)
 
 
