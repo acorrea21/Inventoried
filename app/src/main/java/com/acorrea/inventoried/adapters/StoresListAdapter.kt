@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.acorrea.inventoried.R
-import com.acorrea.inventoried.entity.StoreData
+import com.acorrea.inventoried.oldEntities.StoreData
 
 class StoresListAdapter (
     context: Context,

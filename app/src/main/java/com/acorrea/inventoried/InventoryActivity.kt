@@ -5,8 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import com.acorrea.inventoried.adapters.InventoryListAdapter
-import com.acorrea.inventoried.entity.Product
-import com.acorrea.inventoried.entity.ProductInventory
+import com.acorrea.inventoried.oldEntities.DataManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class InventoryActivity : AppCompatActivity() {
@@ -16,7 +15,8 @@ class InventoryActivity : AppCompatActivity() {
 
         val listView = findViewById<ListView>(R.id.inventoryListView)
         
-        listView.adapter = InventoryListAdapter(this, android.R.layout.simple_list_item_1,DataManager.productsInventory)
+        listView.adapter = InventoryListAdapter(this, android.R.layout.simple_list_item_1,
+            DataManager.productsInventory)
 
 
         val newButton = findViewById<FloatingActionButton>(R.id.inventoryNewButton)
@@ -35,7 +35,8 @@ class InventoryActivity : AppCompatActivity() {
 
         val listView = findViewById<ListView>(R.id.inventoryListView)
 
-        listView.adapter = InventoryListAdapter(this, android.R.layout.simple_list_item_1,DataManager.productsInventory)
+        listView.adapter = InventoryListAdapter(this, android.R.layout.simple_list_item_1,
+            DataManager.productsInventory)
     }
 
     fun NewProduct()

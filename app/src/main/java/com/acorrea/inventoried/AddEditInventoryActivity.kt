@@ -5,10 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
-import androidx.annotation.IntegerRes
-import com.acorrea.inventoried.entity.Product
-import com.acorrea.inventoried.entity.ProductInventory
+import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Product
+import com.acorrea.inventoried.oldEntities.ProductInventory
 
 class AddEditInventoryActivity : AppCompatActivity() {
 

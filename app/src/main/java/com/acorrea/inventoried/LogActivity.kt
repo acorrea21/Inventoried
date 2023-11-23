@@ -5,7 +5,8 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.acorrea.inventoried.entity.UserData
+import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.UserData
 
 
 class LogActivity : AppCompatActivity()

@@ -1,9 +1,10 @@
-package com.acorrea.inventoried.entity
+package com.acorrea.inventoried.oldEntities
 
 import android.os.Parcel
 import android.os.Parcelable
 
-data class StoreData(var name: String?, var description: String?) : Parcelable {
+data class Product(var name :String?, var description: String?) : Parcelable
+{
     constructor(parcel: Parcel) : this(
         parcel.readString(),
         parcel.readString()
@@ -19,12 +20,12 @@ data class StoreData(var name: String?, var description: String?) : Parcelable {
         return 0
     }
 
-    companion object CREATOR : Parcelable.Creator<StoreData> {
-        override fun createFromParcel(parcel: Parcel): StoreData {
-            return StoreData(parcel)
+    companion object CREATOR : Parcelable.Creator<Product> {
+        override fun createFromParcel(parcel: Parcel): Product {
+            return Product(parcel)
         }
 
-        override fun newArray(size: Int): Array<StoreData?> {
+        override fun newArray(size: Int): Array<Product?> {
             return arrayOfNulls(size)
         }
     }

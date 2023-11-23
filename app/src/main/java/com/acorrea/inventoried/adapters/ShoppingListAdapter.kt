@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.acorrea.inventoried.entity.ProductShopping
+import com.acorrea.inventoried.oldEntities.ProductShopping
 import com.acorrea.inventoried.R
 
 class ShoppingListAdapter (

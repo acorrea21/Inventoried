@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import com.acorrea.inventoried.entity.ProductShopping
 import com.acorrea.inventoried.R
-import com.acorrea.inventoried.entity.ProductInventory
+import com.acorrea.inventoried.oldEntities.ProductInventory
 
 class InventoryListAdapter (
     context: Context,
