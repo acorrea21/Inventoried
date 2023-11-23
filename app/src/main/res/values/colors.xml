@@ -2,4 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="onyx">#2e3532</color>
+    <color name="claret">#8b2635</color>
+    <color name="alabaster">#e0e2db</color>
+    <color name="timberwolf">#d2d4c8</color>
+    <color name="glaucous">#7d82b8</color>
+
 </resources>
