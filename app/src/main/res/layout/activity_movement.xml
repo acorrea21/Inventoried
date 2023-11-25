@@ -2,7 +2,8 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/timberwolf">
 
     <!-- Título -->
     <TextView
@@ -13,6 +14,7 @@
         android:gravity="center"
         android:padding="16dp"
         android:text="@string/movement_title"
+        android:textColor="@color/onyx"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -24,5 +26,5 @@
         android:layout_below="@id/titleTextView"
         android:divider="@android:color/darker_gray"
         android:dividerHeight="0.5dp"
-        android:padding="16dp"/>
+        android:padding="16dp" />
 </RelativeLayout>

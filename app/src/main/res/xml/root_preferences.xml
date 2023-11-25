@@ -16,6 +16,12 @@
             android:title="@string/setting_intro_question"
             app:key="playintro" />
 
+        <ListPreference
+            app:key="language"
+            app:title="@string/language_preference_title"
+            app:dialogTitle="@string/language_preference_subtitle"
+            app:entries="@array/language_entries"
+            app:entryValues="@array/language_values"
+            app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
-
 </PreferenceScreen>

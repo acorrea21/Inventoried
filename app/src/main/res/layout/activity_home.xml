@@ -3,7 +3,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/timberwolf">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/homeToolbar"
@@ -11,7 +12,8 @@ android:layout_height="match_parent">
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:backgroundTint="@color/claret"
-        app:titleTextColor="@color/onyx" />
+        app:title="@string/app_name"
+        app:titleTextColor="@color/alabaster" />
 
     <androidx.appcompat.widget.SearchView
         android:id="@+id/homeSearch"
@@ -19,7 +21,7 @@ android:layout_height="match_parent">
         android:layout_height="wrap_content"
         android:layout_below="@id/homeToolbar"
         android:iconifiedByDefault="false"
-        android:queryHint="Buscar en la lista" >
+        android:queryHint="Buscar en la lista">
 
     </androidx.appcompat.widget.SearchView>
 
@@ -27,11 +29,11 @@ android:layout_height="match_parent">
         android:id="@+id/homeListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/homeSearch"
-        android:divider="@android:color/darker_gray"
-        android:dividerHeight="0.5dp"
         android:layout_above="@+id/homeAddButton"
-        android:backgroundTint="@color/timberwolf">
+        android:layout_below="@id/homeSearch"
+        android:backgroundTint="@color/timberwolf"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp">
 
     </ListView>
 
@@ -43,6 +45,10 @@ android:layout_height="match_parent">
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/add" />
+        android:fontFamily="@font/atma_light"
+        android:text="@string/add"
+        android:textColor="@color/onyx"
+        android:textSize="16sp"
+        android:textStyle="bold" />
 
 </RelativeLayout>

@@ -1,74 +1,51 @@
 <resources>
     <string name="app_name">Inventoried</string>
 
-    <string name="welcome">¡Bienvenido a inventoried!</string>
+    <string name="welcome">Welcome to Inventoried!</string>
 
-    <string name="name">Nombre</string>
-    <string name="amount">Cantidad</string>
-    <string name="price">Precio</string>
-    <string name="brand">Marca</string>
-    <string name="type">Tipo</string>
-    <string name="add">Añadir</string>
-    <string name="cancel">Cancelar</string>
-    <string name="confirm">Confirmar</string>
-    <string name="erase">Eliminar</string>
-    <string name="product">Producto</string>
-    <string name="details">Detalles</string>
-    <string name="date">Fecha</string>
+    <string name="name">Name</string>
+    <string name="amount">Quantity</string>
+    <string name="price">Price</string>
+    <string name="brand">Brand</string>
+    <string name="type">Type</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="erase">Erase</string>
+    <string name="product">Product</string>
+    <string name="details">Details</string>
+    <string name="date">Date</string>
+    <string name="none">None</string>
 
-    <string name="home_toolbar_settings">Configuracion</string>
-    <string name="home_toolbar_movements">Historial de movimientos</string>
+    <string name="home_toolbar_settings">Settings</string>
+    <string name="home_toolbar_movements">Movement History</string>
 
-    <string name="movement_type_add">Añadir</string>
-    <string name="movement_type_remove">Eliminar</string>
-    <string name="movement_type_change_name">Cambiar Nombre</string>
-    <string name="movement_type_change_price">Cambiar Precio</string>
-    <string name="movement_type_change_amount">Cambiar Cantidad</string>
-    <string name="movement_type_change_brand">Cambiar Marca</string>
-    <string name="movement_type_change_type">Cambiar Tipo</string>
+    <string name="movement_type_add">Add</string>
+    <string name="movement_type_remove">Remove</string>
+    <string name="movement_type_change_name">Change Name</string>
+    <string name="movement_type_change_price">Change Price</string>
+    <string name="movement_type_change_amount">Change Quantity</string>
+    <string name="movement_type_change_brand">Change Brand</string>
+    <string name="movement_type_change_type">Change Type</string>
 
-    <string name="product_type_vegetables">Vegetales</string>
-    <string name="product_type_beverages">Bebestibles</string>
-    <string name="product_type_fruits">Frutas</string>
-    <string name="product_type_hygiene">Higiene</string>
-    <string name="product_type_office">Oficina</string>
-    <string name="product_type_others">Otros</string>
+    <string name="product_type_vegetables">Vegetables</string>
+    <string name="product_type_beverages">Beverages</string>
+    <string name="product_type_fruits">Fruits</string>
+    <string name="product_type_hygiene">Hygiene</string>
+    <string name="product_type_office">Office</string>
+    <string name="product_type_others">Others</string>
+    <string name="add_product_error">Some fields have incorrect values!</string>
 
-    <string name="inventory_name">Inventario</string>
-    <string name="stores_name">Lista de tiendas</string>
-    <string name="shopping_name">Lista de compras</string>
+    <string name="product_add">Add a new product!</string>
+    <string name="product_edit">Edit your product!</string>
 
-    <string name="product_add">¡Añade un nuevo producto!</string>
-    <string name="product_edit">¡Edita tu producto!</string>
-    <string name="store_add">¡Añade una nueva tienda!</string>
-    <string name="store_edit">¡Edita tu tienda!</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="setting_title">Options</string>
+    <string name="setting_user_title">Your Name</string>
+    <string name="setting_default_user">User</string>
+    <string name="setting_intro_question">Play intro?</string>
+    <string name="language_preference_title">Language</string>
+    <string name="language_preference_subtitle">Choose your language</string>
 
-    <string name="logreg_login">Iniciar Sesion</string>
-    <string name="logreg_register">Registrarse</string>
-    <string name="logreg_back">Volver</string>
-    <string name="logreg_reg_tittle">Registrate</string>
-    <string name="logreg_hint_username">Usuario</string>
-    <string name="logreg_hint_pasword">Contraseña</string>
-    <string name="logreg_hint_newusername">Nuevo Usuario</string>
-    <string name="logreg_hint_newpassword">Nueva Contraseña</string>
-
-    <string name="addedit_add">Añadir</string>
-    <string name="addedit_cancel">Cancelar</string>
-    <string name="addedit_confirm">Confirmar</string>
-    <string name="addedit_erase">Eliminar</string>
-    <string name="addedit_hint_name">Nombre</string>
-    <string name="addedit_hint_description">Descripción</string>
-    <string name="addedit_hint_amount">Cantidad</string>
-    <string name="addedit_hint_price">Precio</string>
-    <string name="addedit_hint_brand">Marca</string>
-    <string name="title_activity_settings">SettingsActivity</string>
-
-    <string name="setting_title">Opciones</string>
-    <string name="setting_user_title">Tu nombre</string>
-    <string name="setting_default_user">Usuario</string>
-    <string name="setting_intro_question">¿Reproducir intro?</string>
-
-    <string name="add_product_error">¡Alguno de los campos tiene valores incorrectos!</string>
-    <string name="movement_title">Historial de movimientos</string>
-    <string name="none">Ninguno</string>
+    <string name="movement_title">Movement History</string>
 </resources>

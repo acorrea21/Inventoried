@@ -3,30 +3,51 @@ package com.acorrea.inventoried
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import cl.acorrea.inventoried.Interface.TimerCallback
 import com.acorrea.inventoried.entity.Timer
-import com.acorrea.inventoried.oldEntities.Utilities
+import com.acorrea.inventoried.entity.Utilities
 
-class SplashActivity : AppCompatActivity(), TimerCallback
+class SplashActivity : AppCompatActivity()
 {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
-        var timer = Timer(this,1000)
 
         if(Utilities.getPlayIntro(this))
         {
-            timer.Start(3000)
+            val imageView = findViewById<ImageView>(R.id.splashImage)
+
+            // Cargar las animaciones desde los archivos XML
+            val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fadein)
+
+            fadeIn.setAnimationListener(object : Animation.AnimationListener
+            {
+                override fun onAnimationStart(animation: Animation) {
+                }
+
+                override fun onAnimationEnd(animation: Animation)
+                {
+                    nextActivity()
+                }
+
+                override fun onAnimationRepeat(animation: Animation) {
+                }
+            })
+
+            // Aplicar las animaciones a la imagen
+            imageView.startAnimation(fadeIn)
         }
         else
         {
-            onTimerFinished(Timer(this))
+            nextActivity()
         }
     }
 
-    override fun onTimerFinished(timer: Timer)
+    fun nextActivity()
     {
-        super.onTimerFinished(timer)
         val intent = Intent(this,HomeActivity::class.java)
         intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
         startActivity(intent)

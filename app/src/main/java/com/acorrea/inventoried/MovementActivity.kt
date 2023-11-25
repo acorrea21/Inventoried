@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import com.acorrea.inventoried.adapters.MovementListAdapter
-import com.acorrea.inventoried.oldEntities.Utilities
+import com.acorrea.inventoried.entity.Utilities
 
 class MovementActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

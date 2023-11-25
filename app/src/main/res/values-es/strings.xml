@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Inventoried</string>
+
+    <string name="welcome">¡Bienvenido a inventoried!</string>
+
+    <string name="name">Nombre</string>
+    <string name="amount">Cantidad</string>
+    <string name="price">Precio</string>
+    <string name="brand">Marca</string>
+    <string name="type">Tipo</string>
+    <string name="add">Añadir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="erase">Eliminar</string>
+    <string name="product">Producto</string>
+    <string name="details">Detalles</string>
+    <string name="date">Fecha</string>
+    <string name="none">Ninguno</string>
+
+    <string name="home_toolbar_settings">Configuracion</string>
+    <string name="home_toolbar_movements">Historial de movimientos</string>
+
+    <string name="movement_type_add">Añadir</string>
+    <string name="movement_type_remove">Eliminar</string>
+    <string name="movement_type_change_name">Cambiar Nombre</string>
+    <string name="movement_type_change_price">Cambiar Precio</string>
+    <string name="movement_type_change_amount">Cambiar Cantidad</string>
+    <string name="movement_type_change_brand">Cambiar Marca</string>
+    <string name="movement_type_change_type">Cambiar Tipo</string>
+
+    <string name="product_type_vegetables">Vegetales</string>
+    <string name="product_type_beverages">Bebestibles</string>
+    <string name="product_type_fruits">Frutas</string>
+    <string name="product_type_hygiene">Higiene</string>
+    <string name="product_type_office">Oficina</string>
+    <string name="product_type_others">Otros</string>
+    <string name="add_product_error">¡Alguno de los campos tiene valores incorrectos!</string>
+
+    <string name="product_add">¡Añade un nuevo producto!</string>
+    <string name="product_edit">¡Edita tu producto!</string>
+
+    <string name="title_activity_settings">Configuraciones</string>
+    <string name="setting_title">Opciones</string>
+    <string name="setting_user_title">Tu nombre</string>
+    <string name="setting_default_user">Usuario</string>
+    <string name="setting_intro_question">¿Reproducir intro?</string>
+    <string name="language_preference_title">Idioma</string>
+    <string name="language_preference_subtitle">Elige tu idioma</string>
+
+    <string name="movement_title">Historial de movimientos</string>
+</resources>

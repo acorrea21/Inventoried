@@ -12,7 +12,7 @@ import com.acorrea.inventoried.adapters.ProductListAdapter
 import com.acorrea.inventoried.database.MyDatabase
 import com.acorrea.inventoried.database.ProductDAO
 import com.acorrea.inventoried.database.ProductEntity
-import com.acorrea.inventoried.oldEntities.Utilities
+import com.acorrea.inventoried.entity.Utilities
 
 class HomeActivity : AppCompatActivity()
 {

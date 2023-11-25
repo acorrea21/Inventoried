@@ -11,7 +11,7 @@ import android.widget.Toast
 import com.acorrea.inventoried.database.MovementEntity
 import com.acorrea.inventoried.database.MyDatabase
 import com.acorrea.inventoried.database.ProductEntity
-import com.acorrea.inventoried.oldEntities.Utilities
+import com.acorrea.inventoried.entity.Utilities
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale

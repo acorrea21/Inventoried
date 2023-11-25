@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/alabaster"
     android:orientation="vertical"
     android:padding="8dp">
 
@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="casual"
         android:text="@string/name"
+        android:textColor="@color/onyx"
         android:textSize="18sp" />
 
     <TextView
@@ -19,26 +20,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/amount" />
+        android:text="@string/amount"
+        android:textColor="@color/onyx" />
 
     <TextView
         android:id="@+id/listViewPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/price" />
+        android:text="@string/price"
+        android:textColor="@color/onyx" />
 
     <TextView
         android:id="@+id/listViewBrandName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/brand" />
+        android:text="@string/brand"
+        android:textColor="@color/onyx" />
 
     <TextView
         android:id="@+id/listViewType"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="casual"
-        android:text="@string/type" />
+        android:text="@string/type"
+        android:textColor="@color/onyx" />
 </LinearLayout>

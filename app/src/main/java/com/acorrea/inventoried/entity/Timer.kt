@@ -50,7 +50,7 @@ class Timer(private val callback: TimerCallback,val intervalTickMiliseconds: Lon
             }
 
             override fun onFinish() {
-                callback.onTimerFinished(this@Timer)
+                callback.nextActivity(this@Timer)
                 timer = null
             }
 

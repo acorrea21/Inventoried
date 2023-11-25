@@ -1,4 +1,4 @@
-package com.acorrea.inventoried.oldEntities
+package com.acorrea.inventoried.entity
 
 import android.content.Context
 import androidx.preference.PreferenceManager
@@ -72,8 +72,4 @@ object Utilities
         return pref.getBoolean("playintro", true)
     }
 
-    var users = arrayListOf<UserData>()
-    var stores = arrayListOf<StoreData>()
-    var productsInventory = arrayListOf<ProductInventory>()
-    var productsShopping = arrayListOf<ProductShopping>()
 }

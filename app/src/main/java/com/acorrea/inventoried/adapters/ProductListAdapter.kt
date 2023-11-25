@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import com.acorrea.inventoried.R
 import com.acorrea.inventoried.database.ProductEntity
-import com.acorrea.inventoried.oldEntities.Utilities
+import com.acorrea.inventoried.entity.Utilities
 
 class ProductListAdapter (
     context: Context,
