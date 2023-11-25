@@ -16,6 +16,7 @@ class ProductListAdapter (
     products: List<ProductEntity>
 ) : ArrayAdapter<ProductEntity>(context, resource, products)
 {
+
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         val inflater = context.getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
         val listItemView = convertView ?: inflater.inflate(R.layout.list_item_product, null)

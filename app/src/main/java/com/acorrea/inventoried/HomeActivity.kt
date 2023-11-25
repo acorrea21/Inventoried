@@ -7,6 +7,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ListView
+import androidx.appcompat.widget.SearchView
 import androidx.appcompat.widget.Toolbar
 import com.acorrea.inventoried.adapters.ProductListAdapter
 import com.acorrea.inventoried.database.MyDatabase
@@ -18,7 +19,12 @@ class HomeActivity : AppCompatActivity()
 {
     lateinit var database: MyDatabase
     lateinit var productDAO: ProductDAO
+    lateinit var searchView: SearchView
+
     var products = listOf<ProductEntity>()
+    var filtedProducts = mutableListOf<ProductEntity>()
+
+    var clearQuery = false
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -26,6 +32,20 @@ class HomeActivity : AppCompatActivity()
         setContentView(R.layout.activity_home)
         var toolbar : Toolbar? = findViewById<Toolbar>(R.id.homeToolbar)
         setSupportActionBar(toolbar)
+
+        searchView = findViewById(R.id.homeSearch)
+        // Agrega un listener para la SearchView
+        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(query: String?): Boolean {
+                return false
+            }
+
+            override fun onQueryTextChange(newText: String?): Boolean {
+                RefreshListViewFilter(newText)
+                return true
+            }
+        })
+
 
         val newButton = findViewById<Button>(R.id.homeAddButton)
         newButton.setOnClickListener {NewProduct()}
@@ -40,7 +60,6 @@ class HomeActivity : AppCompatActivity()
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean
     {
-
         menuInflater.inflate(R.menu.home_toolbar, menu)
         return true
     }
@@ -68,19 +87,50 @@ class HomeActivity : AppCompatActivity()
 
     override fun onResume() {
         super.onResume()
-        RefreshListView()
+        GetProducts()
+        RefreshListViewFilter(searchView.query.toString())
+    }
+
+    fun GetProducts()
+    {
+        database = Utilities.getDatabase(this)
+        productDAO = database.productDao()
+        Utilities.products = productDAO.getAll()
     }
 
     fun RefreshListView()
     {
         val listView = findViewById<ListView>(R.id.homeListView)
 
-        database = Utilities.getDatabase(this)
-        productDAO = database.productDao()
-        Utilities.products = productDAO.getAll()
+        val adapter = ProductListAdapter(this, android.R.layout.simple_list_item_1, Utilities.products)
+        listView.adapter = adapter
+    }
 
-        listView.adapter = ProductListAdapter(this, android.R.layout.simple_list_item_1,
-            Utilities.products)
+    fun RefreshListViewFilter(query :String?)
+    {
+        val listView = findViewById<ListView>(R.id.homeListView)
+
+
+        if(query.isNullOrBlank())
+        {
+            RefreshListView()
+            return
+        }
+
+        var originalList = Utilities.products
+        filtedProducts.clear()
+
+        for(p in originalList)
+        {
+            if(!p.name.isNullOrBlank() && p.name.lowercase().contains(query.lowercase()))
+            {
+                filtedProducts.add(p)
+            }
+        }
+
+        // Cambiar aquí
+        val adapter = ProductListAdapter(this, android.R.layout.simple_list_item_1, filtedProducts)
+        listView.adapter = adapter
     }
 
     fun NewProduct()
@@ -92,7 +142,19 @@ class HomeActivity : AppCompatActivity()
 
     fun EditProduct(index: Int)
     {
+        var i = index
+
+        //Si hay algo en la busqueda, tenemos que revisar
+        if(!searchView.query.toString().isNullOrBlank())
+        {
+            //Debido a como funciona los filtros primero debemos asegurarnos de que sea el index correcto
+            val p = filtedProducts[index]
+            i = products.indexOf(p)
+        }
+
         val intent = Intent(this, AddEditProductsActivity::class.java)
+
+
         intent.putExtra("index", index)
         startActivity(intent)
     }
