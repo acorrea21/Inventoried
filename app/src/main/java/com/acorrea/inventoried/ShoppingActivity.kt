@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import com.acorrea.inventoried.adapters.ShoppingListAdapter
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class ShoppingActivity : AppCompatActivity() {
@@ -17,7 +17,7 @@ class ShoppingActivity : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.shoppingListView)
 
         listView.adapter = ShoppingListAdapter(this, android.R.layout.simple_list_item_1,
-            DataManager.productsShopping)
+            Utilities.productsShopping)
 
 
         val newButton = findViewById<FloatingActionButton>(R.id.shoppingNewButton)
@@ -37,7 +37,7 @@ class ShoppingActivity : AppCompatActivity() {
         val listView = findViewById<ListView>(R.id.shoppingListView)
 
         listView.adapter = ShoppingListAdapter(this, android.R.layout.simple_list_item_1,
-            DataManager.productsShopping)
+            Utilities.productsShopping)
     }
 
     fun NewProduct()

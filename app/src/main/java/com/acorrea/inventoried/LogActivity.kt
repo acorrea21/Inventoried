@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.acorrea.inventoried.oldEntities.UserData
 
 
@@ -20,7 +20,7 @@ class LogActivity : AppCompatActivity()
         val logInButton = findViewById<Button>(R.id.logLogInButton)
         val registerButton = findViewById<Button>(R.id.logRegisButton)
 
-        DataManager.users.add(UserData("admin","admin1234"))
+        Utilities.users.add(UserData("admin","admin1234"))
 
         logInButton.setOnClickListener {TryLogin()}
         registerButton.setOnClickListener {TryToReg() }
@@ -37,7 +37,7 @@ class LogActivity : AppCompatActivity()
     {
         val userInput = findViewById<EditText>(R.id.logUserInput)
         val passInput = findViewById<EditText>(R.id.logPassInput)
-        val users = DataManager.users
+        val users = Utilities.users
 
         for (userdata in users)
         {

@@ -3,6 +3,36 @@
 
     <string name="welcome">¡Bienvenido a inventoried!</string>
 
+    <string name="name">Nombre</string>
+    <string name="amount">Cantidad</string>
+    <string name="price">Precio</string>
+    <string name="brand">Marca</string>
+    <string name="type">Tipo</string>
+    <string name="add">Añadir</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">Confirmar</string>
+    <string name="erase">Eliminar</string>
+    <string name="product">Producto</string>
+    <string name="details">Detalles</string>
+    <string name="date">Fecha</string>
+
+    <string name="home_toolbar_settings">Configuracion</string>
+    <string name="home_toolbar_movements">Historial de movimientos</string>
+
+    <string name="movement_type_add">Añadir</string>
+    <string name="movement_type_remove">Eliminar</string>
+    <string name="movement_type_change_name">Cambiar Nombre</string>
+    <string name="movement_type_change_price">Cambiar Precio</string>
+    <string name="movement_type_change_amount">Cambiar Cantidad</string>
+    <string name="movement_type_change_brand">Cambiar Marca</string>
+    <string name="movement_type_change_type">Cambiar Tipo</string>
+
+    <string name="product_type_vegetables">Vegetales</string>
+    <string name="product_type_beverages">Bebestibles</string>
+    <string name="product_type_fruits">Frutas</string>
+    <string name="product_type_hygiene">Higiene</string>
+    <string name="product_type_office">Oficina</string>
+    <string name="product_type_others">Otros</string>
 
     <string name="inventory_name">Inventario</string>
     <string name="stores_name">Lista de tiendas</string>
@@ -22,7 +52,6 @@
     <string name="logreg_hint_newusername">Nuevo Usuario</string>
     <string name="logreg_hint_newpassword">Nueva Contraseña</string>
 
-
     <string name="addedit_add">Añadir</string>
     <string name="addedit_cancel">Cancelar</string>
     <string name="addedit_confirm">Confirmar</string>
@@ -31,23 +60,15 @@
     <string name="addedit_hint_description">Descripción</string>
     <string name="addedit_hint_amount">Cantidad</string>
     <string name="addedit_hint_price">Precio</string>
+    <string name="addedit_hint_brand">Marca</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+    <string name="setting_title">Opciones</string>
+    <string name="setting_user_title">Tu nombre</string>
+    <string name="setting_default_user">Usuario</string>
+    <string name="setting_intro_question">¿Reproducir intro?</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
-
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="title_activity_main">MainActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
+    <string name="add_product_error">¡Alguno de los campos tiene valores incorrectos!</string>
+    <string name="movement_title">Historial de movimientos</string>
+    <string name="none">Ninguno</string>
 </resources>

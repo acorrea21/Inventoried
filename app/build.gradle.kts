@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.acorrea.inventoried"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.acorrea.inventoried"
         minSdk = 27
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -46,6 +46,10 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("androidx.appcompat:appcompat:1.4.0")
     implementation("com.google.android.material:material:1.9.0")
+
+    implementation("androidx.room:room-common:2.6.0")
+    implementation("androidx.room:room-runtime:2.3.0")
+
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.preference:preference:1.2.1")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")

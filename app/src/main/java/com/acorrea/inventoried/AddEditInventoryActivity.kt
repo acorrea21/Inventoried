@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.acorrea.inventoried.oldEntities.Product
 import com.acorrea.inventoried.oldEntities.ProductInventory
 
@@ -28,7 +28,7 @@ class AddEditInventoryActivity : AppCompatActivity() {
         val index = intent.getIntExtra("index",-1)
         if(index >= 0)
         {
-            editProduct = DataManager.productsInventory[index]
+            editProduct = Utilities.productsInventory[index]
         }
 
         val confirmButton = findViewById<Button>(R.id.addInventoryConfirmButton)
@@ -60,7 +60,7 @@ class AddEditInventoryActivity : AppCompatActivity() {
 
     fun ErraseProduct()
     {
-        DataManager.productsInventory.remove(editProduct)
+        Utilities.productsInventory.remove(editProduct)
         finish()
     }
 
@@ -73,7 +73,7 @@ class AddEditInventoryActivity : AppCompatActivity() {
 
         //TODO: CHECK VALUES
 
-        DataManager.productsInventory.add(ProductInventory(Product(name,desc),amount))
+        Utilities.productsInventory.add(ProductInventory(Product(name,desc),amount))
         finish()
     }
 

@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.acorrea.inventoried.oldEntities.UserData
 
 class RegActivity : AppCompatActivity()
@@ -27,7 +27,7 @@ class RegActivity : AppCompatActivity()
     {
         val  userInput = findViewById<EditText>(R.id.regUserInput)
         val  passInput = findViewById<EditText>(R.id.regPassInput)
-        val users = DataManager.users;
+        val users = Utilities.users;
 
         //No queremos usuarios repetidos, asi que por comprobamos que no exista el mismo usuario
         for (userdata in users)
@@ -39,7 +39,7 @@ class RegActivity : AppCompatActivity()
             }
         }
         Toast.makeText(this,"Registrado exitosamente",Toast.LENGTH_LONG).show()
-        DataManager.users.add(UserData(userInput.text.toString(),passInput.text.toString()))
+        Utilities.users.add(UserData(userInput.text.toString(),passInput.text.toString()))
     }
 
 

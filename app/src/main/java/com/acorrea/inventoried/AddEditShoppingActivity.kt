@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.acorrea.inventoried.oldEntities.Product
 import com.acorrea.inventoried.oldEntities.ProductShopping
 
@@ -31,7 +31,7 @@ class AddEditShoppingActivity : AppCompatActivity() {
         val index = intent.getIntExtra("index", -1)
         if (index >= 0)
         {
-            editProduct = DataManager.productsShopping[index]
+            editProduct = Utilities.productsShopping[index]
         }
 
         val confirmButton = findViewById<Button>(R.id.addShoppingConfirmButton)
@@ -62,7 +62,7 @@ class AddEditShoppingActivity : AppCompatActivity() {
 
     fun ErraseProduct()
     {
-        DataManager.productsShopping.remove(editProduct)
+        Utilities.productsShopping.remove(editProduct)
         finish()
     }
 
@@ -74,7 +74,7 @@ class AddEditShoppingActivity : AppCompatActivity() {
         val price = priceView.text.toString().toInt()
         //TODO: CHECK VALUES
 
-        DataManager.productsShopping.add(ProductShopping(Product(name, desc), price, amount))
+        Utilities.productsShopping.add(ProductShopping(Product(name, desc), price, amount))
         finish()
     }
 

@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import com.acorrea.inventoried.oldEntities.DataManager
+import com.acorrea.inventoried.oldEntities.Utilities
 import com.acorrea.inventoried.oldEntities.StoreData
 
 class AddEditStoreActivity : AppCompatActivity() {
@@ -26,7 +26,7 @@ class AddEditStoreActivity : AppCompatActivity() {
         val index = intent.getIntExtra("index", -1)
         if (index >= 0)
         {
-            editStore = DataManager.stores[index]
+            editStore = Utilities.stores[index]
         }
 
         val confirmButton = findViewById<Button>(R.id.addStoreConfirmButton)
@@ -60,14 +60,14 @@ class AddEditStoreActivity : AppCompatActivity() {
         val desc = descriptionView.text.toString()
         //TODO: CHECK VALUES
 
-        DataManager.stores.add(StoreData(name, desc))
+        Utilities.stores.add(StoreData(name, desc))
         finish()
     }
 
 
     fun ErraseStore()
     {
-        DataManager.stores.remove(editStore)
+        Utilities.stores.remove(editStore)
         finish()
     }
 

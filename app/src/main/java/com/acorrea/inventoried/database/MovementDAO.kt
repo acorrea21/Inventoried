@@ -6,19 +6,19 @@ import androidx.room.Insert
 import androidx.room.Query
 
 @Dao
-interface MovementDAO {
+interface MovementDAO
+{
     @Query("SELECT * FROM MovementEntity")
-    fun getAll(): List<ProductEntity>
+    fun getAll(): List<MovementEntity>
 
-    @Query("SELECT * FROM MovementEntity WHERE mid IN (:userIds)")
-    fun loadAllByIds(userIds: IntArray): List<MovementEntity>
-
-    /*@Query("SELECT * FROM ProductEntity WHERE name LIKE :first AND " +
-            "last_name LIKE :last LIMIT 1")
-    fun findByName(first: String, last: String): User*/
+    @Query("SELECT * FROM MovementEntity WHERE mid IN (:movementID)")
+    fun loadAllByIds(movementID: IntArray): List<MovementEntity>
 
     @Insert
     fun insertAll(vararg users: MovementEntity)
+
+    @Insert
+    fun insert(movement: MovementEntity)
 
     @Delete
     fun delete(user: MovementEntity)

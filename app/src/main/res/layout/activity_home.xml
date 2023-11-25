@@ -1,22 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/alabaster">
+android:layout_height="match_parent">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/homeToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/claret"
-        android:elevation="4dp"
-        android:theme="?attr/actionBarTheme"
-        app:popupTheme="?attr/actionBarPopupTheme" />
+        android:background="?attr/colorPrimary"
+        android:backgroundTint="@color/claret"
+        app:titleTextColor="@color/onyx" />
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".HomeActivity"/>
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/homeSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homeToolbar"
+        android:iconifiedByDefault="false"
+        android:queryHint="Buscar en la lista" >
+
+    </androidx.appcompat.widget.SearchView>
+
+    <ListView
+        android:id="@+id/homeListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeSearch"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:layout_above="@+id/homeAddButton"
+        android:backgroundTint="@color/timberwolf">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/homeAddButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add" />
+
 </RelativeLayout>
