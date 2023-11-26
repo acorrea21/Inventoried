@@ -16,6 +16,6 @@ class MovementActivity : AppCompatActivity() {
 
         val listView = findViewById<ListView>(R.id.movementListView)
         listView.adapter = MovementListAdapter(this, android.R.layout.simple_list_item_1,
-        movements)
+        movements.reversed())
     }
 }
