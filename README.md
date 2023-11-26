@@ -2,37 +2,21 @@
 
 Inventoried es un proyecto creado por Alexander Correa para el curso de Programacion de Dispositivos Moviles.
 
-Inventoried es una aplicacion creada para facilitar la gestion y registros de productos que esten dentro del hogar, gestionar listas de compras, precios, presupuestos, tiendas o lugares de interes, planificacion de compras, recordatorios de compra, y planificacion de compras de varios usuarios.
+Inventoried es una aplicacion creada para facilitar la gestion y registros de productos que esten dentro del hogar, gestionando su cantidad, precio, marca, y tipo.
 
-LINK DE PRESENTACION: https://youtu.be/rZUvA5T7jrk
+VERSION DEL PROYECTO: PROTOTIPO 0.22
 
-ESTADO DEL PROYECTO: MAQUETADO
+ULTIMA ACTUALIZACION: Recorte de funcionalidades, mejora de interfaz de usuario, añadidas configuraciones, soporte para ingles, historial de cambios, arreglado bug que permitia poner campos sin valores, añadida persistencia a travez de bases de datos (room), opcion para poder realizar busquedas de productos, centralizacion de las funcionalidades en el home, añadidos nuevos campos a los productos.
 
-LINK DE DESCARGA: https://drive.google.com/file/d/1vmH8DsCfyyyr2UYh1n1c6GKvXyh0sipA/view?usp=sharing
+LINK DE PRESENTACION: [Link a la presentacion de la ultima actualizacion](https://youtu.be/XqV44B0dnWU)
 
-Requerimientos funcionales:
-Debe ser capaz de manejar listas, 
-Debe poder administrar usuarios a traves de cloud, 
-Los usuarios deben tener contraseña, 
-Debe poder almacenar y gestionar datos de usuarios (Listas de compras, listas de tiendas, listas de productos, formas de pago,etc), 
-Debe poder conectarse a internet, 
-Debe poder recordar con fecha y hora ciertos eventos, 
-Debe poder enviar notificaciones push, 
-Los usuarios deben tener una ID o un metodo para evitar la repeticion de nombres e indetificacion, 
-Debe poder crearse eventos entre varios usuarios, 
-Debe poder gestionar listas de lugares, con gps, 
+LINK DE DESCARGA (0.22): [Link al google drive](https://drive.google.com/file/d/1XJNCUiotcjrBEnZ2ZhSVUzwo-yJY48mX/view?usp=sharing)
 
-Requerimientos no funcionales: 
-Debe ser minimalista, 
-Debe ser intuitiva, 
-Debe ser bonita, 
-Debe tener un minimo de seguridad, 
-Debe sentirse amigable, 
-Debe ser sencilla, 
-Debe ser facil crear nuevos productos, 
-Debe ser facil crear nuevas tiendas, 
-Debe poder entenderse sin tutorial, 
+///Informacion adicional del proyecto///
 
-DIAGRAMA DE CLASES:
-![Diagrama de clases](https://github.com/acorrea21/Inventoried/assets/127762650/85e5d7ae-9c51-4e2c-b627-54f6a9840c5a)
+Tablas base de datos:
+
+![Tablas db](https://github.com/acorrea21/Inventoried/assets/121874185/ea86383e-04e8-4efb-b45a-6b27664af977)
+
+Explicacion: No se relacionan con una foreing key debido a que la eliminacion de un producto podria afectar el historial de movimientos.
 
