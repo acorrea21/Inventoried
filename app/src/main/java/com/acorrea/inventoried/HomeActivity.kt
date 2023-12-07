@@ -135,7 +135,7 @@ class HomeActivity : AppCompatActivity()
 
     fun NewProduct()
     {
-        val intent = Intent(this, AddEditProductsActivity::class.java)
+        val intent = Intent(this, APIRESTActivity::class.java)
         startActivity(intent)
     }
 
